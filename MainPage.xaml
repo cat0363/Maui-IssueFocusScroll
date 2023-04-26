@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_IssueFocusScroll.MainPage">
+
+    <ScrollView Orientation="Vertical" x:Name="svTest">
+        <StackLayout Orientation="Vertical" x:Name="slTest">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="30,*" HeightRequest="44">
+                        <Label Grid.Column="0" FontSize="18" Text="{Binding No}" TextColor="Black" HorizontalTextAlignment="End" VerticalOptions="Center" />
+                        <Entry Grid.Column="1" FontSize="18" Text="{Binding ItemName}" TextColor="Black" />
+                    </Grid>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
